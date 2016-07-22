@@ -13,10 +13,12 @@
       </label>
 
       {{> loginButtons}}
-      
-      <form class="new-task">
-			<input type="text" name="text" placeholder="Type a task here"/>
-      </form>
+
+      {{#if currentUser}}
+        <form class="new-task">
+  			 <input type="text" name="text" placeholder="Type a task here"/>
+        </form>
+      {{/if}}
 
     </header>
 
